@@ -13,7 +13,7 @@ ConnectDB();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: "https://mern-auth-frontend-frxz.onrender.com", credentials: true }));
+app.use(cors({ origin: "*", credentials: true }));
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
